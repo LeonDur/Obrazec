@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>PC part picker</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<link rel="icon" type="image/x-icon" href="graphic-card.png">
+	</head>
+	<body>
+		<script src="script.js"></script>
+		<div class="main">
+			<div class="glava"></div>
+			<div class="forma">
+				<form action="submit.php" method="post">
+				<div>
+				<img src="cpu.png" class="slike">
+					<select name="cpu" id="cpu" required>
+						<option value="" disabled selected>CPU</option>
+						<option value="intel i5">intel i5</option>
+						<option value="intel i9">intel i9</option>
+						<option value="amd 3 3100">amd 3 3100</option>
+						<option value="amd 7 7800">amd 7 7800</option>
+					</select>
+				</div>
+				<div>
+				<img src="ram.png" class="slike">
+					<select name="ram" id="ram" required>
+						<option value="" disabled selected>RAM</option>
+						<option value="8Gb 3200mhz">8Gb 3200mhz</option>
+						<option value="16Gb 3200mhz">16Gb 3200mhz</option>
+						<option value="32Gb 3200mhz">32Gb 3200mhz</option>
+						</select>
+				</div>
+				<div>
+				<img src="psu.png" class="slike">
+					<select name="psu" id="psu" required>
+						<option value="" disabled selected>PSU</option>
+						<option value="300W">300W</option>
+						<option value="400W">400W</option>
+						<option value="500W">500W</option>
+						</select>
+				</div>
+				<div>
+				<img src="graphic-card.png" class="slike">
+					<select name="gpu" id="gpu" required>
+						<option value="" disabled selected>GPU</option>
+						<option value="Nvidia GTX 1660">Nvidia GTX 1660</option>
+						<option value="Nvidia RTX 2080">Nvidia RTX 2080</option>
+						<option value="AMD Radeon RX 7000">AMD Radeon RX 7000</option>
+						</select>
+				</div>
+				
+				<input type="submit" value="Submit"  id="submit">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>	
