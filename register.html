@@ -1,20 +1,52 @@
 <html>
 	<head>
-		<title>Login</title>
-		<link rel="stylesheet" href="css/login.css">
+		<title>Register</title>
+		<link rel="stylesheet" href="css/register.css">
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<link rel="icon" type="image/x-icon" href="slike/logo.png">
 	</head>
 	<body>
-		<script src="script.js"></script>
+		<script src="script/script.js"></script>
 		<div class="main">
             <div class="glava">
                 <div id="logotip">
-                    <a href="index.html" ><img src="slike/partpicker.png" id="logo"></a>
+                    <a href="index.html" ><img src="slike/pcpp-logo.png" id="logo"></a>
                 </div>
             </div>
-            <div class="forma">
-                
+				<div class="forma">
+				<div id="naslov"></div>
+				<div id="login">Register</div>
+				<div class="sredina">
+                <form>						
+					
+						
+						<input type="text" placeholder="Username"  id="user" required pattern=".{5,30}" autofocus title="Username must be between 5 and 30 letters"></input>
+						<br/>
+						<br/>
+						
+						<input type="email" placeholder="Email adress"  id="email" required pattern="[a-z0-9._%+-]{5}+@[a-z0-9.-]+\.[a-z]{2, 4}" autofocus title="Enter a valid email adress"></input>
+						<br/>
+						<br/>
+						
+						
+						
+						<input type="password" placeholder="Password"  id="pass" required onchange="validatePassword()">						
+						<br/>
+						<br/>
+						<input type="password" placeholder="Confirm password"  id="pass2" required pattern=".{5,20}" autofocus title="Password must be between 5 and 20 letters"onkeyup="validatePassword()">						
+						<br/>
+						<br/>
+						
+						<input type="submit" value="Register" id="button" ><br/>
+						<br/>
+						<br/>
+						
+					</form>
+					</div>
+					<div id="regist">Already a member? <br></div>
+					<div id="reg" >
+						<a href="index.html"><button id="register" onclick="">Log in</button></a>
+					</div>
             </div>
         </div>
     </body>
