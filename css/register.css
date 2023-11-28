@@ -51,6 +51,7 @@ body{
 	margin:auto;
 	width:80%;
 	font-size:25px;
+	font-family:Segoe UI;
 }
 .sredina{
 	width:80%;
@@ -69,6 +70,7 @@ body{
 	border-radius:8px;
 	background-color:#18141c;
 	color:white;
+	font-family:Segoe UI;
 }
 #pass, #user, #email, #pass2{
 	padding-left:5px;
@@ -85,6 +87,7 @@ body{
 	margin-bottom:3%;
 	width:80%;
 	font-size:20px;
+	font-family:Segoe UI;
 }
 #reg{
 	width:80%;

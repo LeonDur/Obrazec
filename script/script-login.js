@@ -22,6 +22,8 @@ function sweetSuccess() {
     icon: 'success',
     title: 'Success!',
 	confirmButtonColor: '#247cd4',
+	background:'#201c24',
+	color:'white',
     text: 'Hello '+user+','+ 'you\'ve been logged in.',
   });
 }
@@ -29,6 +31,9 @@ function sweetFailure(){
 	Swal.fire({
     icon: 'error',
     title: 'Error!',
+	confirmButtonColor: '#247cd4',
+	background:'#201c24',
+	color:'white',
     text: 'Your credentials are incorrect.',
   });
 }
